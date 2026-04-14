@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>SpeedChat | Мобильная версия</title>
     <link rel="icon" type="image/png" href="icom.png">
-    <script src="https://gstatic.com"></script>
-    <script src="https://gstatic.com"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
     <style>
         body { background: #0e1621; color: white; font-family: sans-serif; margin: 0; display: flex; height: 100vh; overflow: hidden; }
         
@@ -80,7 +80,7 @@
 </div>
 
 <script>
-    const firebaseConfig = { databaseURL: "https://firebaseio.com" };
+    const firebaseConfig = { databaseURL: "https://speedchat-3412e-default-rtdb.firebaseio.com/" };
     firebase.initializeApp(firebaseConfig);
     const db = firebase.database();
     
